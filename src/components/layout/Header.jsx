@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom"
 import { NavbarMenu } from "./HeaderStyled";
-import labefy from "../../images/labefy.png"
+import labefy from "../../images/labefy-logo-name.png"
 
 class Header extends React.Component {
     render () {
