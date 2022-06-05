@@ -15,15 +15,22 @@ export const NavbarMenu = styled.div`
     font-size: 1em;
 
     @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        display: flex;
+        flex-direction: row;
+        font-size: .8em;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
 
-            display: flex;
-            flex-direction: row;
-            font-size: .8em;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-
+    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+        display: flex;
+        flex-direction: row;
+        font-size: 1em;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
     
     img {
         width: 60px;
@@ -39,7 +46,15 @@ export const NavbarMenu = styled.div`
         margin-left: 10em;
 
         @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: space-around;
+            margin: 1em 0;
+            padding: 1em 0;
+        }
 
+        @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
             display: flex;
             flex-direction: row;
             text-align: center;
@@ -66,4 +81,3 @@ export const NavbarMenu = styled.div`
         transition: 0.5s;
     }
 `
-

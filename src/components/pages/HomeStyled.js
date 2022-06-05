@@ -31,11 +31,10 @@ min-height: 100vh;
         }
 
         @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
-            width: 80vw;
-            font-size: 2em;
+            width: 100vw;
+            font-size: 3em;
             text-align: center;
             padding: .2em;
-            
         }
 
     }
@@ -108,8 +107,8 @@ min-height: 100vh;
         }
 
         @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
-            width: 80vw;
-            font-size: 2em;
+            width: 100vw;
+            font-size: 3em;
             text-align: center;
             padding: .2em;
             margin: 1em;
@@ -122,10 +121,11 @@ min-height: 100vh;
         background-color: #222;
         padding: .5em;
         color: #7AFFA2;
+        font-size: .8em;
         border-radius: 0 1em;
 
         @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
-            font-size: .9em;
+            font-size: .7em;
             padding: 1em;
         }
 
@@ -176,12 +176,14 @@ min-height: 100vh;
             width: 100vw;
             height: auto;
             margin-top: .2em;
+            padding:.1em;
         }
 
         @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
-            width: 70vw;
+            width: 100vw;
             height: auto;
             margin-top: .2em;
+            padding:.1em;
         }
     }
 
@@ -242,12 +244,14 @@ width: 100%;
         width: 100vw;
         height: 30vh;
         margin-bottom: 3em;
+        padding:.2em;
     }
 
     @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
-        width: 70vw;
-        height: 25vh;
+        width: 100vw;
+        height: 30vh;
         margin-bottom: 3em;
+        padding:.2em;
     }
 `
 
@@ -279,7 +283,7 @@ border-radius: 2em;
 max-width: 20em;
 
     img {
-        width: 300px;
+        width: 280px;
         border-radius: 0 0 1em 1em;
     }
 
@@ -311,7 +315,7 @@ text-align: center;
 max-width: 20em;
 
     img {
-        width: 300px;
+        width: 280px;
         border-radius: 0 0 1em 1em;
     }
 
@@ -342,7 +346,7 @@ text-align: center;
 max-width: 20em;
 
     img {
-        width: 300px;
+        width: 280px;
         border-radius: 0 0 1em 1em;
     }
 
@@ -362,4 +366,37 @@ max-width: 20em;
         display: block;
         width: auto;
     }
+    
+`
+
+export const Box4 = styled.div`
+
+display: block;
+margin: 1em;
+align-items: center;
+text-align: center;
+max-width: 20em;
+
+    img {
+        width: 280px;
+        border-radius: 0 0 1em 1em;
+    }
+
+    p {
+        color: #F6F6F6;
+        background-color: black;
+        border: 1px solid green;
+        margin-bottom: 0
+    }
+    
+    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        display: block;
+        width: 100vw;
+    }
+
+    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+        display: block;
+        width: auto;
+    }
+
 `

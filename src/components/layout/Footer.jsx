@@ -7,7 +7,7 @@ class Footer extends React.Component {
         return (
             
         <Footercontainer className="footer">
-                <ul className="social-list">
+                <ul className="socialList">
                     <li>
                         <a href="https://www.facebook.com/" target="_blank"><FaFacebook/></a>
                     </li>
