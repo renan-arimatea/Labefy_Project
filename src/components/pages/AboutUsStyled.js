@@ -131,6 +131,10 @@ export const Container_1 = styled.div`
         transform: scale(1.1);
         transition: .3s;
     }
+
+    p {
+        margin-top: 10em;
+    }
        
 `
 
@@ -147,6 +151,8 @@ export const Container_2 = styled.div`
     p {
         position: relative;
         right: 30%;
+
+        margin-top: 10em;
     }
 
     iconContent_2 img {
