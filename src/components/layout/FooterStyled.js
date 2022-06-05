@@ -7,7 +7,6 @@ export const Footercontainer = styled.div`
     color: #FFF;
     padding: 3em;
     text-align: center; 
-    
 
 ul {
     display: flex;

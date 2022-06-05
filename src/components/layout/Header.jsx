@@ -1,23 +1,30 @@
-import React from "react";
+import React, {useState} from "react";
 import {Link} from "react-router-dom"
 import { NavbarMenu } from "./HeaderStyled";
 import labefy from "../../images/labefy-logo-name.png"
 
-class Header extends React.Component {
-    render () {
-        return (
-            <NavbarMenu>
-                <Link to="/"><img src={labefy} alt="logo labefy"/></Link>
-                <nav>
-                   <ul>
-                       <li><Link to="/">Home</Link></li>
-                       <li><Link to="/playlists">Minha Playlist</Link></li>
-                       <li><Link to="/aboutus">Sobre nós</Link></li>
-                   </ul>
+const Header =() => {
+
+    const [classOn, setClassOn] = useState(false);
+
+    return (
+        <NavbarMenu>
+            <Link to="/"><img src={labefy} alt="logo labefy"/></Link>
+            <div className = { classOn ? 'menu-section on' : 'menu-section'} onClick={() => setClassOn(!classOn)}/>
+            <div className="menu-toggle">
+              <div className="one"></div>
+              <div className="two"></div>
+              <div className="three"></div>
+            </div>
+                <nav className="list">
+                    <ul className="listItems">
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/playlists">Minha Playlist</Link></li>
+                        <li><Link to="/aboutus">Sobre nós</Link></li>
+                    </ul>
                 </nav>
-            </NavbarMenu>
-        )
-    }
+        </NavbarMenu>
+    )
 }
 
 export default Header

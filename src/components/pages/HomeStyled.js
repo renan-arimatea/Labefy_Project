@@ -22,6 +22,22 @@ min-height: 100vh;
         margin-bottom: .5em;
         color: #F6F6F6;
         text-shadow: black 0.1em 0.1em 0.2em;
+
+        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            width: 100vw;
+            font-size: 2em;
+            text-align: center;
+            padding: .2em;
+        }
+
+        @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+            width: 80vw;
+            font-size: 2em;
+            text-align: center;
+            padding: .2em;
+            
+        }
+
     }
 
     h1 span, h2 span {
@@ -82,6 +98,22 @@ min-height: 100vh;
         color: #F6F6F6;
         text-shadow: black 0.1em 0.1em 0.2em;
         margin: 2em 0;
+
+        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            width: 100vw;
+            font-size: 2em;
+            text-align: center;
+            padding: .2em;
+            margin: 1em;
+        }
+
+        @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+            width: 80vw;
+            font-size: 2em;
+            text-align: center;
+            padding: .2em;
+            margin: 1em;
+        }
     }
 
 
@@ -91,6 +123,17 @@ min-height: 100vh;
         padding: .5em;
         color: #7AFFA2;
         border-radius: 0 1em;
+
+        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            font-size: .9em;
+            padding: 1em;
+        }
+
+        @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+            font-size: .8em;
+            padding: 1em;
+        }
+
     }
 
     button {
@@ -102,12 +145,19 @@ min-height: 100vh;
         padding: 1em 4em;
         border: 1px solid #7AFFA2;
         border-radius: 1.5em;
+
+        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            width: auto;
+        }
+
+        @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+            width: auto;
+        }
     }
 
     button a {
         text-decoration: none;
         color: #FFF;
-        
     }
 
     button:hover {
@@ -121,6 +171,28 @@ min-height: 100vh;
         width: min-content;
         cursor: pointer;
         margin-top: 2em;
+
+        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            width: 100vw;
+            height: auto;
+            margin-top: .2em;
+        }
+
+        @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+            width: 70vw;
+            height: auto;
+            margin-top: .2em;
+        }
+    }
+
+    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        width: 100vw;
+        padding: 2em;
+    }
+
+    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+        width: 100vw;
+        padding: 2em;
     }
 `
 
@@ -129,6 +201,15 @@ export const LogoLabefy = styled.div`
     img {
         width: 100px;
 
+        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            width: 80px;
+            margin: .1em;
+        }
+
+        @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+            width: 100px;
+            margin: .1em;
+        }
     }
 
     img:hover {
@@ -144,6 +225,7 @@ export const LogoLabefy = styled.div`
         75% {margin-left: -5px;}
         100% {margin-left: 0;}
     }
+
 `
 
 export const Banner_principal = styled.div`
@@ -155,11 +237,35 @@ width: 100%;
        width: 100%;
        margin: 2em 0;
     }
+
+    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        width: 100vw;
+        height: 30vh;
+        margin-bottom: 3em;
+    }
+
+    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+        width: 70vw;
+        height: 25vh;
+        margin-bottom: 3em;
+    }
 `
 
 export const MainContent = styled.div`
 
 display: flex;
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    display: block;
+    width: 100vw;
+}
+
+@media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+}
+
 `
 
 export const Box1 = styled.div`
@@ -184,6 +290,16 @@ max-width: 20em;
         margin-bottom: 0;
     }
 
+    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        display: block;
+        width: 100vw;
+    }
+
+    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+        display: block;
+        width: auto;
+    }
+
 `
 
 export const Box2 = styled.div`
@@ -206,6 +322,16 @@ max-width: 20em;
         border: 1px solid green
     }
 
+    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        display: block;
+        width: 100vw;
+    }
+
+    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+        display: block;
+        width: auto;
+    }
+
 `
 export const Box3 = styled.div`
 
@@ -226,5 +352,14 @@ max-width: 20em;
         border: 1px solid green;
         margin-bottom: 0
     }
+    
+    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        display: block;
+        width: 100vw;
+    }
 
+    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+        display: block;
+        width: auto;
+    }
 `

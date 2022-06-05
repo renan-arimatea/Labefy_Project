@@ -13,6 +13,17 @@ export const NavbarMenu = styled.div`
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
+
+    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+            display: flex;
+            flex-direction: row;
+            font-size: .8em;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
     
     img {
         width: 60px;
@@ -26,6 +37,16 @@ export const NavbarMenu = styled.div`
         padding: 1em;
         text-align: center;
         margin-left: 10em;
+
+        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: space-around;
+            margin: 1em 0;
+            padding: 1em 0;
+        }
     }
 
     li {
@@ -45,3 +66,4 @@ export const NavbarMenu = styled.div`
         transition: 0.5s;
     }
 `
+
