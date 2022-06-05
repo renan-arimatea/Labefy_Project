@@ -258,16 +258,21 @@ width: 100%;
 export const MainContent = styled.div`
 
 display: flex;
+width: 100vw;
 
 @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100vw;
+    
 }
 
 @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 1fr;
+    align-items: center;
 }
 
 `
