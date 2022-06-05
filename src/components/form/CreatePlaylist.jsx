@@ -114,7 +114,7 @@ class CreatePlaylist extends React.Component {
                 
                 <div className="playlist_container">
 
-                    <h3>Comece criando as suas <span>playlists</span></h3>
+                    <h3>Comece criando as suas <span>playlists</span>.</h3>
 
                     <input
                         placeholder="Nome da Playlist..."
@@ -125,7 +125,7 @@ class CreatePlaylist extends React.Component {
                     <button onClick={this.criaPlaylist}>Criar Playlist</button>
                 </div>
 
-                <p>Você também pode <span>acessar</span> as playlists já criadas</p>
+                <p>Você também pode <span>acessar</span> as playlists já criadas.</p>
 
                 <button onClick={this.props.irParaLista}>Minhas Playlists</button>
             </PlaylistMain>
