@@ -258,7 +258,6 @@ width: 100%;
 export const MainContent = styled.div`
 
 display: flex;
-width: 100vw;
 
 @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
     display: flex;

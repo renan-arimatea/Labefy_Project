@@ -17,10 +17,23 @@ export const Main = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
 
+
     h1 {
         font-size: 2.5em;
         margin-bottom: .5em;
         color: #FFFF;
+
+    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        font-size: 2em;
+        text-align: center;
+        padding: 1em;
+    }
+
+    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+        font-size: 2.5em;
+        text-align: center;
+        padding: 1em;
+    }
 }
 
     p {
@@ -28,6 +41,18 @@ export const Main = styled.div`
         background-color: #222;
         padding: .5em;
         color: #7AFFA2;
+
+    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        font-size: .8em;
+        text-align: center;
+        padding: 1em;
+    }
+
+    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+        font-size: 1.5em;
+        text-align: center;
+        padding: 1em;
+    }
         
     }
 
