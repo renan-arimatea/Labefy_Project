@@ -8,10 +8,10 @@ export const NavbarMenu = styled.div`
     
     padding: .2em;
 
-    background-image: linear-gradient(to right, #000000, #000000, #340D10, #000000, #000000);
+    background-color: #000;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1em;
+    font-size: .8em;
 
     @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
         display: flex;
@@ -40,6 +40,10 @@ export const NavbarMenu = styled.div`
         padding: .2em;
         margin-left: 1em;
         color: white;
+
+        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            width: 50px;
+        }
     }
 
     ul {

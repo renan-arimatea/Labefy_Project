@@ -15,7 +15,7 @@ const Home = () => {
         <HomeContainer>
 
             <LogoLabefy>
-                <img src={labefy_white} alt="" />
+                <img src={labefy_white} alt="logo labefy" />
             </LogoLabefy>
 
             <h1>Playlists selecionadas e <span>personalizadas</span>.</h1>
