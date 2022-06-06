@@ -242,7 +242,7 @@ width: 100%;
 
     @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
         width: 100vw;
-        height: 30vh;
+        height: 25vh;
         margin-bottom: 3em;
         padding:.2em;
     }
@@ -250,6 +250,13 @@ width: 100%;
     @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
         width: 100vw;
         height: 30vh;
+        margin-bottom: 3em;
+        padding:.2em;
+    }
+
+    @media screen and (min-device-width : 1921px) {
+        width: 50vw;
+        height: 60vh;
         margin-bottom: 3em;
         padding:.2em;
     }

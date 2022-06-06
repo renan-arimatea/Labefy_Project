@@ -115,6 +115,14 @@ export const Container_1 = styled.div`
         padding: .5em;
     }
 
+    @media screen and (min-device-width : 1921px) {
+        display: flex;
+        width: 60vw;
+        background-color: #000;
+        color: #fff;
+        padding: .5em;
+    }
+
 
     img {
         height: 700px;
@@ -158,7 +166,7 @@ export const Container_1 = styled.div`
 
         iconContent_1 img {
             width: 300px;
-            height: 250px;
+            height: 215px;
             align-items: center;
             justify-content: center;
             padding: 1em;
@@ -238,6 +246,14 @@ export const Container_2 = styled.div`
         color: #fff;
         padding: .5em;
     }
+
+    @media screen and (min-device-width : 1921px) {
+        display: flex;
+        width: 60vw;
+        background-color: #000;
+        color: #fff;
+        padding: .5em;
+    }
     
     img {
         height: 700px;
@@ -281,7 +297,7 @@ export const Container_2 = styled.div`
 
         iconContent_2 img {
             width: 300px;
-            height: 250px;
+            height: 215px;
             align-items: center;
             justify-content: center;
             padding: 1em;

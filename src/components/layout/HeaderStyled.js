@@ -6,7 +6,6 @@ export const NavbarMenu = styled.div`
     justify-content: space-between;
     align-items: center;
     
-    margin: auto;
     padding: .2em;
 
     background-image: linear-gradient(to right, #000000, #000000, #340D10, #000000, #000000);
@@ -30,6 +29,10 @@ export const NavbarMenu = styled.div`
         text-align: center;
         margin: 0;
         padding: 0;
+    }
+
+    @media screen and (min-device-width : 1921px) {
+        padding: .2em 20%;
     }
     
     img {
