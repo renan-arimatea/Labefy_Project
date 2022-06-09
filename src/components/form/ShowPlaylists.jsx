@@ -82,10 +82,10 @@ class ShowPlaylists extends React.Component {
 
         return (
             <PlaylistContent>
-                   <h3>Minhas <span>playlists</span></h3>
-                    {AllPlaylists}
-                    <button onClick={this.props.irParaCadastro}>+ Adicionar</button>
-                </PlaylistContent> 
+                <h3>Minhas <span>playlists</span></h3>
+                {AllPlaylists}
+                <button onClick={this.props.irParaCadastro}>Voltar</button>
+            </PlaylistContent> 
         )
     }
 }

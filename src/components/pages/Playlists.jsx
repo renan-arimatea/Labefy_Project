@@ -1,9 +1,7 @@
 import React from "react";
 import { PlaylistContent } from "./PlaylistsStyled";
-import axios from "axios";
 import CreatePlaylist from "../form/CreatePlaylist";
 import ShowPlaylists from "../form/ShowPlaylists";
-
 
 class Playlists extends React.Component {
 

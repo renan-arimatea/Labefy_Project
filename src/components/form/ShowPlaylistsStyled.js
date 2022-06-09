@@ -38,6 +38,12 @@ button {
 
 export const PlaylistContent = styled.div`
 
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+
 h3 {
     padding: 1.5em;
 }
@@ -54,6 +60,7 @@ button {
         margin-left: 1em;
         border-radius: 2em;
         border: 1px solid #7AFFA2;
+        margin-bottom: 1em;
 
         background-color: black;
         color: #FFF; text-shadow: black 0.1em 0.1em 0.2em;

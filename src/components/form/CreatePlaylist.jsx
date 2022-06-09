@@ -2,6 +2,8 @@ import React from "react";
 import axios from "axios";
 import { axiosConfig, baseUrl } from "../constants/urls";
 import { PlaylistMain } from "./CreatePlaylistStyled";
+import {GoToHome} from "../../routes/RouteFunctions"
+import { Link } from "react-router-dom";
 
 
 class CreatePlaylist extends React.Component {
@@ -33,7 +35,6 @@ class CreatePlaylist extends React.Component {
         })
 
         this.setState({playlist: ""})
-
     }
 
     render () {
@@ -56,8 +57,8 @@ class CreatePlaylist extends React.Component {
                 <p>Você também pode <span>acessar</span> as playlists já criadas.</p>
 
                 <button onClick={this.props.irParaLista}>Minhas Playlists</button>
+                <button><Link to="/">Voltar</Link></button>
             </PlaylistMain>
-            
         )
     }
 }

@@ -59,6 +59,11 @@ button {
     font-weight: 600;
 }
 
+button a {
+    text-decoration: none;
+    color: #FFF;
+}
+
 button:hover {
     cursor: pointer;
     transform: scale(1.1);
