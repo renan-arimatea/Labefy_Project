@@ -92,7 +92,7 @@ import {MusicContainer, MusicCard, PlaylistDiv} from "./EditPlaylistStyled"
 
                 <p>{musica.artist}</p>
 
-                <audio src={musica.url} ref="audio_tag" controls></audio>
+                <audio src={musica.url} ref="audio_tag" controls="controls" type="audio/ogg"></audio>
                 
 
                 <button onClick={() => {if(window.confirm('Deletar Música?')) {this.deletaMusica(musica.id)}}}> x </button>
