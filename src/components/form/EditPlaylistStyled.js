@@ -5,6 +5,9 @@ export const MusicContainer = styled.div`
 
 display: flex;
 flex-direction: column;
+justify-content: center;
+text-align: center;
+align-items: center;
 width: max-content;
 height: max-content;
 
@@ -101,9 +104,10 @@ button:hover {
 }
 
 audio {
-    width: 2vw;
+    width: 18vw;
     height: 1em;
     margin: 0 .3em;
+    background: black;
 }
 `
 
