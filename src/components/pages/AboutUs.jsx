@@ -14,7 +14,7 @@ class AboutUs extends React.Component {
 
                     <div>
                         <iconContent_1><img src={icon_3} alt="icone de albuns" /></iconContent_1>
-                        <p>O <span>Labefy</span> apoia artistas oferecendo ferramentas para criar, lançar e medir o alcance das músicas em todo o mundo. Descubra diversas maneiras de promover conteúdo no Labefy, como MusicKit, feeds RSS, widgets, diretrizes de marca, artes para ícones e mais.</p>
+                        <p>O <span>Labefy</span> lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam ducimus adipisci reiciendis nam atque ipsam, magni hic! At tempora, quia odit asperiores consectetur laborum consequatur nostrum voluptates commodi iusto sapiente! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa excepturi, voluptatibus, temporibus ea quidem numquam ab perferendis ducimus amet ratione maiores veritatis esse similique corporis deleniti, qui explicabo sed officiis? Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
 
                 </Container_1>
@@ -26,7 +26,7 @@ class AboutUs extends React.Component {
 
                     <div>
                         <iconContent_2><img src={icon_2} alt="icone de microfone" /></iconContent_2>
-                        <p>O <span>Labefy</span> é um serviço de streaming em que você pode ouvir mais de 90 milhões de músicas. Ele tem recursos incríveis para você baixar suas faixas favoritas e ouvir sem conexão, ver as letras em tempo real, escutar em todos os seus aparelhos, receber recomendações personalizadas de novas músicas, playlists feitas por nossos editores e muito mais. Além de tudo isso, você tem acesso a conteúdo original e exclusivo.</p>
+                        <p>O <span>Labefy</span> lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laborum alias consequuntur aperiam libero ratione est perspiciatis, tenetur sit. Quia ad adipisci impedit expedita at voluptatem consectetur aliquam porro. Maiores? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates tenetur ullam earum harum? Nostrum, quis omnis eaque molestias modi ab minima doloremque debitis vitae, laborum exercitationem quisquam rerum, illum assumenda?</p>
                     </div>
                 </Container_2>
             </Main>
