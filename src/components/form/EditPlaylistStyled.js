@@ -119,12 +119,13 @@ export const Player = styled.div`
     color: #f2f2f2;
     border: 1px solid #7AFFA2;
 
-    display: flex;
     align-items: center;
+    justify-content: center;
+
 
     .btn {
         padding: 0 .2em;
-
+       
         :hover{
             cursor: pointer;
             color: #7AFFA2;
@@ -133,16 +134,82 @@ export const Player = styled.div`
     }
 
     .btn_play, .btn_pause{
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
-    .btn_setas {
-        font-size: 1.2em;
+    .btn_arrow {
+        font-size: 1.5em;
+        margin: 0 1em;
     }
 
     .btn_pause {
         display: none;
     }
+`
+
+export const MusicData = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:.8em;
+
+    p {
+        font-size: 1em;
+    }
+
+    i {
+        font-size: .9em;
+        padding: .5em 0 1em 0;
+    }
+`
+
+export const MusicProgres = styled.div`
+
+    .time {
+        width: 15em;
+        margin-top: 1em;
+    }
+
+    .bar {
+        display: flex;
+        align-items: center;
+        width: 15em;
+        height: .4em;
+        border: 1px solid #57f988;
+        border-radius: 1em;
+    }
+
+    .dot {
+        width: 1em;
+        height: 1em;
+        display: flex;
+        justify-content: flex-start;
+        background-color: #eee;
+        border-radius: 50%;
+        margin-left: -.8em;
+        background-color: #57f988;
+    }
+
+    .time {
+        display: flex;
+        justify-content: space-between;
+        width: 18.5em;
+        font-size: .8em;
+    }
+
+    progress {
+        height: .4em;
+        width: 0%;
+        background-color: #57f988;
+    }
+`
+
+export const MusicPlayer = styled.div `
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
 `
 
 export const PlaylistDiv = styled.div`
