@@ -69,7 +69,7 @@ export const MusicCard = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-between;
-width: max-content;
+/* width: max-content; */
 height: auto;
 
 margin: auto;
@@ -104,11 +104,45 @@ button:hover {
 }
 
 audio {
-    width: 18vw;
-    height: 1em;
+    width: 50vw;
+    height: 1.5em;
     margin: 0 .3em;
     background: black;
+    font-size: 1em;
 }
+`
+
+export const Player = styled.div`
+
+    padding: 1em 3em;
+    margin: 1.3em;
+    color: #f2f2f2;
+    border: 1px solid #7AFFA2;
+
+    display: flex;
+    align-items: center;
+
+    .btn {
+        padding: 0 .2em;
+
+        :hover{
+            cursor: pointer;
+            color: #7AFFA2;
+            transition: .3s;
+        }
+    }
+
+    .btn_play, .btn_pause{
+        font-size: 2em;
+    }
+
+    .btn_setas {
+        font-size: 1.2em;
+    }
+
+    .btn_pause {
+        display: none;
+    }
 `
 
 export const PlaylistDiv = styled.div`

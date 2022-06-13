@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom"
 import {Box1, Box2, Box3, HomeContainer, MainContent, LogoLabefy, Banner_principal, Box4 } from "./HomeStyled"
-import labefy_logo from "../../images/labefy-Logo.png"
+import labefy_logo from "../../images/Labefy-Logo.png"
 import Woman_Headphones from "../../images/headphones.jpg"
 import banner from "../../images/banner.jpg"
 import banner1 from "../../images/BannerDesktop.png"

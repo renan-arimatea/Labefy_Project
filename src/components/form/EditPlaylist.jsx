@@ -1,11 +1,13 @@
 import React from 'react'
 import axios from 'axios'
-import ReactAudioPlayer from 'react-audio-player'
 import { axiosConfig, baseUrl } from '../constants/urls'
-import {MusicContainer, MusicCard, PlaylistDiv} from "./EditPlaylistStyled"
-
+import {MusicContainer, MusicCard, PlaylistDiv, Player} from "./EditPlaylistStyled"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCirclePlay, faCirclePause, faForwardFast, faBackwardFast} from '@fortawesome/free-solid-svg-icons'
+import { click } from '@testing-library/user-event/dist/click'
 
  class EditPlaylist extends React.Component {
+
 
     state = {
 
@@ -77,8 +79,60 @@ import {MusicContainer, MusicCard, PlaylistDiv} from "./EditPlaylistStyled"
             artist: "",
             url: ""
         })
+
     }
-    
+
+    tocarMusica = () => {
+
+        let music = document.querySelector('audio');
+
+        document.querySelector('.btn_play').addEventListener('click', this.playMusica);
+
+        music.play()
+
+        document.querySelector('.btn_pause').style.display ='block'
+        document.querySelector('.btn_play').style.display ='none'
+        
+    }
+
+    pausarMusica = () => {
+
+        let music = document.querySelector('audio');
+
+        document.querySelector('.btn_pause').addEventListener('click', this.pausarMusica);
+
+        music.pause()
+
+        document.querySelector('.btn_pause').style.display ='none'
+        document.querySelector('.btn_play').style.display ='block'
+        
+    }
+
+    pularMusica = () => {
+
+        let music = document.querySelector('audio');
+
+        document.querySelector('.btn_pause').addEventListener('click', this.pausarMusica);
+
+        music.pause()
+
+        document.querySelector('.btn_pause').style.display ='none'
+        document.querySelector('.btn_play').style.display ='block'
+        
+    }
+
+    voltarMusica = () => {
+
+        let music = document.querySelector('audio');
+
+        document.querySelector('.btn_pause').addEventListener('click', this.pausarMusica);
+
+        music.pause()
+
+        document.querySelector('.btn_pause').style.display ='none'
+        document.querySelector('.btn_play').style.display ='block'
+        
+    }
 
   render() {
 
@@ -87,61 +141,65 @@ import {MusicContainer, MusicCard, PlaylistDiv} from "./EditPlaylistStyled"
         return (
 
             <MusicCard key={musica.id}>
-
                 <p>{musica.name}</p>
 
                 <p>{musica.artist}</p>
 
-                <audio src={musica.url} ref="audio_tag" controls="controls" type="audio/ogg"></audio>
-                
-
                 <button onClick={() => {if(window.confirm('Deletar Música?')) {this.deletaMusica(musica.id)}}}> x </button>
 
+                <audio src={musica.url} ref="audio_tag" type="audio/ogg" controls=""></audio>
             </MusicCard>
         )
     })
 
     return (
 
-      <MusicContainer>
+        <MusicContainer>
            
-               <input
-                    type="text"
-                    placeholder="Nome da Música"
-                    name='name'
-                    value={this.state.name}
-                    onChange={this.changeInputValues} 
-                />
+            <input
+                type="text"
+                placeholder="Nome da Música"
+                name='name'
+                value={this.state.name}
+                onChange={this.changeInputValues} 
+            />
 
-                <input
-                    type="text"
-                    placeholder="Nome do Artista"
-                    name='artist'
-                    value={this.state.artist}
-                    onChange={this.changeInputValues} 
-                />
-               
-                <input
-                    type="text"
-                    placeholder="Url"
-                    name='url'
-                    value={this.state.url}
-                    onChange={this.changeInputValues} 
-                />
+            <input
+                type="text"
+                placeholder="Nome do Artista"
+                name='artist'
+                value={this.state.artist}
+                onChange={this.changeInputValues} 
+            />
+            
+            <input
+                type="text"
+                placeholder="Url"
+                name='url'
+                value={this.state.url}
+                onChange={this.changeInputValues} 
+            />
 
-                <br/>
-          
+            <br/>
+            
             <button onClick={this.criaMusica}>Adicionar Música</button>
 
             <br/>
 
             <PlaylistDiv>{playlistRenderizada}</PlaylistDiv>
 
+            <Player>
+                <FontAwesomeIcon className='btn btn_previous' icon={faBackwardFast} onClick={this.tocarMusica}/>
+                <FontAwesomeIcon className='btn btn_play' icon={faCirclePlay} onClick={this.tocarMusica}/>
+                <FontAwesomeIcon className='btn btn_pause' icon={faCirclePause} onClick={this.pausarMusica}/>
+                <FontAwesomeIcon className='btn btn_next' icon={faForwardFast} onClick={this.pausarMusica}/>
+            </Player>
+
             <button onClick={this.props.renderizaPaginaPlaylist}>Voltar</button>
           
         </MusicContainer>
     )
-  }
+}
 }
 
 export default EditPlaylist
