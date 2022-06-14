@@ -15,7 +15,7 @@ border: 1px solid #7AFFA2;
 margin: 1em;
 padding: 1em;
 font-size: 1em;
-background-color: #000000;
+background: rgba(0, 0, 0, 0.9);
 
 
 button {

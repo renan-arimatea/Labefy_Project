@@ -2,9 +2,33 @@ import styled from "styled-components";
 
 export const PlaylistMain = styled.div`
 
+background: rgba(0, 0, 0, 0.8);
+padding: 5em;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+align-content: center;
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    padding: 3em;
+}
+
+@media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+    padding: 3em;
+}
+
 h3 {
     font-size: 2em;
-    background-color: #000000;
+    text-shadow: black 0.1em 0.1em 0.2em;
+
+    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        font-size: 1.5em;
+    }
+
+    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+        font-size: 1.6em;
+    }
 }
 
 h3 span {
@@ -15,7 +39,15 @@ p {
     margin-top: 2em;
     font-size: 1.2em;
     padding: 1em;
-    background-color: #000000;
+    text-shadow: black 0.1em 0.1em 0.2em;
+
+    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        font-size: 1em;
+    }
+
+    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+        font-size: 1em;
+    }
 }
 
 p span {
@@ -70,5 +102,4 @@ button:hover {
     transition: 0.5s;
     color: #7AFFA2;
 }
-
 `

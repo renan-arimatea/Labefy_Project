@@ -31,7 +31,7 @@ button {
     :hover {
         cursor: pointer;
         color: red;
-        border: 2px solid red;
+        border: 1px solid red;
     }
 }
 `
@@ -42,10 +42,14 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+align-content: center;
+background: rgba(0, 0, 0, 0.8);
+padding: 2em;
 
 
 h3 {
     padding: 1.5em;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 h3 span {
