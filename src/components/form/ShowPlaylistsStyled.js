@@ -17,6 +17,11 @@ height: 3em;
     color: #7AFFA2;
 }
 
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    width: 18em;
+    font-size: 1.5em;
+}
+
 button {
     display: flex;
     justify-content: center;
@@ -26,6 +31,7 @@ button {
     padding: 0.59em;
     margin-top: -.3em;
 }
+
 
 .btn_Delete {
     :hover {
@@ -46,10 +52,13 @@ align-content: center;
 background: rgba(0, 0, 0, 0.8);
 padding: 2em;
 
-
 h3 {
     padding: 1.5em;
     text-shadow: black 0.1em 0.1em 0.2em;
+
+    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        font-size: 1.8em;
+    }
 }
 
 h3 span {
@@ -70,6 +79,11 @@ button {
         color: #FFF; text-shadow: black 0.1em 0.1em 0.2em;
         font-size: 1.2em;
         font-weight: 600;
+
+        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            font-size: 1.5em;
+        }
+
     }
 
     button:hover {

@@ -23,7 +23,7 @@ export const Main = styled.div`
         background-position: center;
         background-attachment: scroll;
         background-repeat: no-repeat;
-        background-size: auto;
+        background-size: cover;
     }
 
     h1 {

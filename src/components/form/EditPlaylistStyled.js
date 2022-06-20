@@ -17,6 +17,10 @@ padding: 1em;
 font-size: 1em;
 background: rgba(0, 0, 0, 0.9);
 
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    font-size: 1.18em;
+}
+
 
 button {
     width: 10em;
@@ -30,6 +34,10 @@ button {
     color: #FFF; 
     text-shadow: black 0.1em 0.1em 0.2em;
     font-size: .9em;
+
+    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        font-size: 1.2em;
+    }
 }
 
 button:hover {
@@ -51,6 +59,10 @@ input {
     color: #FFF;
     font-size: 1em;
     font-weight: 500;
+
+    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        font-size: 1.2em;
+    }
 }
 
 input::placeholder {
@@ -69,7 +81,6 @@ export const MusicCard = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-between;
-/* width: max-content; */
 height: auto;
 
 margin: auto;
@@ -79,6 +90,10 @@ border-bottom: 1px solid #7AFFA2;
 font-size: 1em;
 font-weight: 500;
 background-color: #000000;
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    font-size: 1.2em;
+}
 
 
 p {
@@ -135,11 +150,19 @@ export const Player = styled.div`
 
     .btn_play, .btn_pause{
         font-size: 2.5em;
+
+        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            font-size: 4em;
+        }
     }
 
     .btn_arrow {
         font-size: 1.5em;
         margin: 0 1em;
+
+        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            font-size: 1.8em;
+        }
     }
 
     .btn_pause {
@@ -152,6 +175,10 @@ export const MusicData = styled.div`
     flex-direction: column;
     align-items: center;
     font-size:.8em;
+
+    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        font-size: 1em;
+    }
 
     p {
         font-size: 1em;

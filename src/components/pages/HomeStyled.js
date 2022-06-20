@@ -20,9 +20,9 @@ min-height: 100vh;
         background-color: #000;
         background-image:url(${process.env.PUBLIC_URL + 'https://images.unsplash.com/photo-1507246249828-b7a6c99f2ce1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'});
         background-position: center;
-        background-attachment: scroll;
+        background-attachment: fixed;
         background-repeat: no-repeat;
-        background-size: auto;
+        background-size: cover;
     }
 
     h1 {

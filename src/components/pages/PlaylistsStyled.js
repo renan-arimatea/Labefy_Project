@@ -28,7 +28,7 @@ color: #FFF;
     background-position: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
 
     width: 100vw;
     font-size: .7em;

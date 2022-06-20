@@ -23,7 +23,7 @@ h3 {
     text-shadow: black 0.1em 0.1em 0.2em;
 
     @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
 
     @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
@@ -42,11 +42,11 @@ p {
     text-shadow: black 0.1em 0.1em 0.2em;
 
     @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
-        font-size: 1em;
+        font-size: 1.3em;
     }
 
     @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 }
 
@@ -66,6 +66,11 @@ input {
     color: #FFF;
     font-size: 1.2em;
     font-weight: 600;
+
+    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        width: 20.4em;
+        font-size: 1.4em;
+    }
 }
 
 input::placeholder {
@@ -89,6 +94,11 @@ button {
     color: #FFF; text-shadow: black 0.1em 0.1em 0.2em;
     font-size: 1.2em;
     font-weight: 600;
+
+    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        width: 12em;
+        font-size: 1.4em;
+    }
 }
 
 button a {
