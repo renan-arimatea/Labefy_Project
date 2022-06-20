@@ -10,11 +10,11 @@ align-items: center;
 justify-content: center;
 align-content: center;
 
-@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     padding: 3em;
 }
 
-@media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+@media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
     padding: 3em;
 }
 
@@ -22,11 +22,11 @@ h3 {
     font-size: 2em;
     text-shadow: black 0.1em 0.1em 0.2em;
 
-    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         font-size: 1.6em;
     }
 
-    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+    @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
         font-size: 1.6em;
     }
 }
@@ -41,11 +41,11 @@ p {
     padding: 1em;
     text-shadow: black 0.1em 0.1em 0.2em;
 
-    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         font-size: 1.3em;
     }
 
-    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+    @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
         font-size: 1.2em;
     }
 }
@@ -67,8 +67,8 @@ input {
     font-size: 1.2em;
     font-weight: 600;
 
-    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
-        width: 20.4em;
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        width: 80vw;
         font-size: 1.4em;
     }
 }
@@ -95,7 +95,7 @@ button {
     font-size: 1.2em;
     font-weight: 600;
 
-    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         width: 12em;
         font-size: 1.4em;
     }

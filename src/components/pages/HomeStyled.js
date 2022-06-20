@@ -16,13 +16,14 @@ background-repeat: no-repeat;
 background-size: cover;
 min-height: 100vh;
 
-@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         background-color: #000;
         background-image:url(${process.env.PUBLIC_URL + 'https://images.unsplash.com/photo-1507246249828-b7a6c99f2ce1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'});
         background-position: center;
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
+        min-height: auto;
     }
 
     h1 {
@@ -32,14 +33,14 @@ min-height: 100vh;
         color: #F6F6F6;
         text-shadow: black 0.1em 0.1em 0.2em;
 
-        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
             width: 100vw;
             font-size: 2em;
             text-align: center;
             padding: .2em;
         }
 
-        @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+        @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
             width: 100vw;
             font-size: 3em;
             text-align: center;
@@ -107,7 +108,7 @@ min-height: 100vh;
         text-shadow: black 0.1em 0.1em 0.2em;
         margin: 2em 0;
 
-        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
             width: 100vw;
             font-size: 2em;
             text-align: center;
@@ -115,7 +116,7 @@ min-height: 100vh;
             margin: 1em;
         }
 
-        @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+        @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
             width: 100vw;
             font-size: 3em;
             text-align: center;
@@ -133,12 +134,12 @@ min-height: 100vh;
         font-size: .8em;
         border-radius: 0 1em;
 
-        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
             font-size: .7em;
             padding: 1em;
         }
 
-        @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+        @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
             font-size: .8em;
             padding: 1em;
         }
@@ -155,11 +156,11 @@ min-height: 100vh;
         border: 1px solid #7AFFA2;
         border-radius: 1.5em;
 
-        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
             width: auto;
         }
 
-        @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+        @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
             width: auto;
         }
     }
@@ -181,14 +182,14 @@ min-height: 100vh;
         cursor: pointer;
         margin-top: 2em;
 
-        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
             width: 100vw;
             height: auto;
             margin-top: .2em;
             padding:.1em;
         }
 
-        @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+        @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
             width: 100vw;
             height: auto;
             margin-top: .2em;
@@ -196,12 +197,12 @@ min-height: 100vh;
         }
     }
 
-    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         width: 100vw;
         padding: 2em;
     }
 
-    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+    @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
         width: 100vw;
         padding: 2em;
     }
@@ -212,12 +213,12 @@ export const LogoLabefy = styled.div`
     img {
         width: 100px;
 
-        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
             width: 80px;
             margin: .1em;
         }
 
-        @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+        @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
             width: 100px;
             margin: .1em;
         }
@@ -249,21 +250,21 @@ width: 100%;
        margin: 2em 0;
     }
 
-    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         width: 100vw;
         height: 25vh;
         margin-bottom: 3em;
         padding:.2em;
     }
 
-    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+    @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
         width: 100vw;
         height: 30vh;
         margin-bottom: 3em;
         padding:.2em;
     }
 
-    @media screen and (min-device-width : 1921px) {
+    @media only screen and (min-device-width : 1921px) {
         width: 50vw;
         height: 60vh;
         margin-bottom: 3em;
@@ -275,7 +276,7 @@ export const MainContent = styled.div`
 
 display: flex;
 
-@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -283,7 +284,7 @@ display: flex;
     
 }
 
-@media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+@media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 1fr;
@@ -314,12 +315,12 @@ max-width: 20em;
         margin-bottom: 0;
     }
 
-    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         display: block;
         width: 100vw;
     }
 
-    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+    @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
         display: block;
         width: auto;
     }
@@ -346,12 +347,12 @@ max-width: 20em;
         border: 1px solid green
     }
 
-    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         display: block;
         width: 100vw;
     }
 
-    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+    @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
         display: block;
         width: auto;
     }
@@ -377,12 +378,12 @@ max-width: 20em;
         margin-bottom: 0
     }
     
-    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         display: block;
         width: 100vw;
     }
 
-    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+    @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
         display: block;
         width: auto;
     }
@@ -409,12 +410,12 @@ max-width: 20em;
         margin-bottom: 0
     }
     
-    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         display: block;
         width: 100vw;
     }
 
-    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+    @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
         display: block;
         width: auto;
     }

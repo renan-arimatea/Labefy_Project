@@ -17,13 +17,14 @@ export const Main = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
 
-    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         background-color: #000;
         background-image: url(${process.env.PUBLIC_URL + 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'});
         background-position: center;
-        background-attachment: scroll;
+        background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
+        min-height: auto;
     }
 
     h1 {
@@ -34,11 +35,11 @@ export const Main = styled.div`
         justify-content: center;
         padding-bottom: 1em;
 
-        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
             font-size: 1.5em;
         }
 
-        @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+        @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
             font-size: 2.6em;
         }
     }
@@ -108,7 +109,7 @@ export const Container_1 = styled.div`
     color: #fff;
     padding: .5em;
 
-    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         display: flex;
         width: 100vw;
         background-color: #000;
@@ -116,7 +117,7 @@ export const Container_1 = styled.div`
         padding: .5em;
     }
 
-    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+    @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
         display: flex;
         width: 100vw;
         background-color: #000;
@@ -124,7 +125,7 @@ export const Container_1 = styled.div`
         padding: .5em;
     }
 
-    @media screen and (min-device-width : 1921px) {
+    @media only screen and (min-device-width : 1921px) {
         display: flex;
         width: 60vw;
         background-color: #000;
@@ -137,12 +138,12 @@ export const Container_1 = styled.div`
         height: 700px;
         width: 30%;
 
-        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
             height: 300px;
             width: 50%;
         }
 
-        @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+        @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
             height: 600px;
             width: 45%;
         }
@@ -159,14 +160,14 @@ export const Container_1 = styled.div`
         flex-direction: column;
         align-items: center;
 
-        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
             width: 100vw;
             align-items: center;
             justify-content: center;
             padding: 1em;
         }
 
-        @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+        @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
             width: 100vw;
             align-items: center;
             justify-content: center;
@@ -180,7 +181,7 @@ export const Container_1 = styled.div`
             justify-content: center;
             padding: 1em;
 
-            @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
                 width: 120px;
                 height: 90px;
                 align-items: center;
@@ -188,7 +189,7 @@ export const Container_1 = styled.div`
                 padding: 1em;
             }
 
-            @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+            @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
                 width: 240px;
                 height: 180px;
                 align-items: center;
@@ -208,13 +209,13 @@ export const Container_1 = styled.div`
             padding: 2em;
             width: 70%;
 
-            @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
                 width: 100%;
                 padding: .1em;
                 font-size: .5em;
             }
 
-            @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+            @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
                 width: 100%;
                 padding: .1em;
                 font-size: .8em;
@@ -238,7 +239,7 @@ export const Container_2 = styled.div`
     color: #fff;
     padding: .5em;
 
-    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         display: flex;
         flex-direction: row-reverse;
         width: 100vw;
@@ -247,7 +248,7 @@ export const Container_2 = styled.div`
         padding: .5em;
     }
 
-    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+    @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
         display: flex;
         flex-direction: row-reverse;
         width: 100vw;
@@ -256,7 +257,7 @@ export const Container_2 = styled.div`
         padding: .5em;
     }
 
-    @media screen and (min-device-width : 1921px) {
+    @media only screen and (min-device-width : 1921px) {
         display: flex;
         width: 60vw;
         background-color: #000;
@@ -268,12 +269,12 @@ export const Container_2 = styled.div`
         height: 700px;
         width: 30%;
 
-        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
             height: 300px;
             width: 50%;
         }
 
-        @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+        @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
             height: 600px;
             width: 45%;
         }
@@ -290,14 +291,14 @@ export const Container_2 = styled.div`
         flex-direction: column;
         align-items: center;
 
-        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
             width: 100vw;
             align-items: center;
             justify-content: center;
             padding: 1em;
         }
 
-        @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+        @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
             width: 100vw;
             align-items: center;
             justify-content: center;
@@ -311,7 +312,7 @@ export const Container_2 = styled.div`
             justify-content: center;
             padding: 1em;
 
-            @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
                 width: 120px;
                 height: 90px;
                 align-items: center;
@@ -319,7 +320,7 @@ export const Container_2 = styled.div`
                 padding: 1em;
             }
 
-            @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+            @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
                 width: 240px;
                 height: 180px;
                 align-items: center;
@@ -339,13 +340,13 @@ export const Container_2 = styled.div`
             padding: 2em;
             width: 70%;
 
-            @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
                 width: 100%;
                 padding: .1em;
                 font-size: .5em;
             }
 
-            @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+            @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
                 width: 100%;
                 padding: .1em;
                 font-size: .8em;

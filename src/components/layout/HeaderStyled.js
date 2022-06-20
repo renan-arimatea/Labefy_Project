@@ -13,7 +13,7 @@ export const NavbarMenu = styled.div`
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: .8em;
 
-    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         display: flex;
         flex-direction: row;
         font-size: .8em;
@@ -22,7 +22,7 @@ export const NavbarMenu = styled.div`
         padding: 0;
     }
 
-    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+    @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
         display: flex;
         flex-direction: row;
         font-size: 1em;
@@ -31,7 +31,7 @@ export const NavbarMenu = styled.div`
         padding: 0;
     }
 
-    @media screen and (min-device-width : 1921px) {
+    @media only screen and (min-device-width : 1921px) {
         padding: .2em 20%;
     }
     
@@ -41,7 +41,7 @@ export const NavbarMenu = styled.div`
         margin-left: 1em;
         color: white;
 
-        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
             width: 50px;
         }
     }
@@ -52,7 +52,7 @@ export const NavbarMenu = styled.div`
         text-align: center;
         margin-left: 10em;
 
-        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
             display: flex;
             flex-direction: row;
             text-align: center;
@@ -61,7 +61,7 @@ export const NavbarMenu = styled.div`
             padding: 1em 0;
         }
 
-        @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+        @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
             display: flex;
             flex-direction: row;
             text-align: center;

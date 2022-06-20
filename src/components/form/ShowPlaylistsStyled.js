@@ -17,8 +17,8 @@ height: 3em;
     color: #7AFFA2;
 }
 
-@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    width: 18em;
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    width: 80vw;
     font-size: 1.5em;
 }
 
@@ -56,7 +56,7 @@ h3 {
     padding: 1.5em;
     text-shadow: black 0.1em 0.1em 0.2em;
 
-    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         font-size: 1.8em;
     }
 }
@@ -80,7 +80,7 @@ button {
         font-size: 1.2em;
         font-weight: 600;
 
-        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
             font-size: 1.5em;
         }
 

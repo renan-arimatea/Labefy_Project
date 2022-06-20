@@ -17,10 +17,10 @@ padding: 1em;
 font-size: 1em;
 background: rgba(0, 0, 0, 0.9);
 
-@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     font-size: 1.18em;
+    width: 100vw;
 }
-
 
 button {
     width: 10em;
@@ -35,7 +35,7 @@ button {
     text-shadow: black 0.1em 0.1em 0.2em;
     font-size: .9em;
 
-    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         font-size: 1.2em;
     }
 }
@@ -60,7 +60,7 @@ input {
     font-size: 1em;
     font-weight: 500;
 
-    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         font-size: 1.2em;
     }
 }
@@ -91,7 +91,7 @@ font-size: 1em;
 font-weight: 500;
 background-color: #000000;
 
-@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     font-size: 1.2em;
 }
 
@@ -151,7 +151,7 @@ export const Player = styled.div`
     .btn_play, .btn_pause{
         font-size: 2.5em;
 
-        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
             font-size: 4em;
         }
     }
@@ -160,7 +160,7 @@ export const Player = styled.div`
         font-size: 1.5em;
         margin: 0 1em;
 
-        @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
             font-size: 1.8em;
         }
     }
@@ -176,7 +176,7 @@ export const MusicData = styled.div`
     align-items: center;
     font-size:.8em;
 
-    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         font-size: 1em;
     }
 

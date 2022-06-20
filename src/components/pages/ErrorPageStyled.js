@@ -15,6 +15,7 @@ export const Main = styled.div`
     background-image: url(${process.env.PUBLIC_URL + '/imgs/404-ErrorPage.jpg'});
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 
 
@@ -23,13 +24,13 @@ export const Main = styled.div`
         margin-bottom: .5em;
         color: #FFFF;
 
-    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         font-size: 2em;
         text-align: center;
         padding: 1em;
     }
 
-    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+    @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
         font-size: 2.5em;
         text-align: center;
         padding: 1em;
@@ -42,13 +43,13 @@ export const Main = styled.div`
         padding: .5em;
         color: #7AFFA2;
 
-    @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         font-size: .8em;
         text-align: center;
         padding: 1em;
     }
 
-    @media screen and (min-device-width : 481px) and (max-device-width : 850px) {
+    @media only screen and (min-device-width : 481px) and (max-device-width : 850px) {
         font-size: 1.5em;
         text-align: center;
         padding: 1em;
