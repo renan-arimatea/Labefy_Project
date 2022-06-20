@@ -28,7 +28,8 @@ color: #FFF;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    min-height: auto;
 
     width: 100vw;
     font-size: .7em;

@@ -21,8 +21,8 @@ min-height: 100vh;
         background-position: center;
         background-attachment: fixed;
         background-repeat: no-repeat;
-        background-size: contain;
-        min-height: 100vh;
+        background-size: cover;
+        min-height: auto;
     }
 
     h1 {

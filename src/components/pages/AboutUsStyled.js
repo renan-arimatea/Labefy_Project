@@ -22,7 +22,8 @@ export const Main = styled.div`
         background-position: center;
         background-attachment: fixed;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
+        min-height: auto;
     }
 
     h1 {
