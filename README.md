@@ -28,7 +28,7 @@ A ideia central deste projeto é realizar uma integração com a API Labefy, que
 
 * [Palcco MP3](https://www.palcomp3.com.br/)
 
-## 🔗 Link do Surge:
+## 🔗 Link da Hospedagem:
 
 * [Labefy](https://labefy-proejct-v2.surge.sh/)
 
@@ -106,4 +106,24 @@ Por padrão a aplicação rodará localmente na porta 3000.
 
 ## 💻 Desktop Layout
 
+![Captura de tela 01](src/screenshoots/desktop01.png)
+![Captura de tela 02](src/screenshoots/desktop02.png)
+![Captura de tela 03](src/screenshoots/desktop03.png)
+![Captura de tela 04](src/screenshoots/desktop04.png)
+![Captura de tela 05](src/screenshoots/desktop05.png)
+![Captura de tela 06](src/screenshoots/desktop06.png)
+![Captura de tela 07](src/screenshoots/desktop07.png)
+![Captura de tela 08](src/screenshoots/desktop08.png)
+![Captura de tela 09](src/screenshoots/desktop09.png)
+
 ## 📱 Mobile Layout
+
+![Captura de tela 01](src/screenshoots/Mobile01.png)
+<br/>
+![Captura de tela 02](src/screenshoots/Mobile02.png)
+<br/>
+![Captura de tela 03](src/screenshoots/Mobile03.png)
+<br/>
+![Captura de tela 04](src/screenshoots/Mobile04.png)
+<br/>
+![Captura de tela 05](src/screenshoots/Mobile05.png)
