@@ -21,7 +21,7 @@ export const Main = styled.div`
         background-color: #000;
         background-image: url(${process.env.PUBLIC_URL + 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'});
         background-position: center;
-        background-attachment: fixed;
+        background-attachment: scroll;
         background-repeat: no-repeat;
         background-size: auto;
     }
