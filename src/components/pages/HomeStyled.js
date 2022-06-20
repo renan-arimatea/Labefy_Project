@@ -17,8 +17,13 @@ background-size: cover;
 min-height: 100vh;
 
 @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    background-image:url(${process.env.PUBLIC_URL + 'https://images.unsplash.com/photo-1507246249828-b7a6c99f2ce1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'})
-}
+        background-image:url(${process.env.PUBLIC_URL + 'https://images.unsplash.com/photo-1507246249828-b7a6c99f2ce1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'});
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 100vh;
+    }
 
     h1 {
         font-size: 3em;
