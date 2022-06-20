@@ -30,7 +30,7 @@ A ideia central deste projeto é realizar uma integração com a API Labefy, que
 
 ## 🔗 Link da Hospedagem:
 
-* [Labefy](https://labefy-proejct-v2.surge.sh/)
+* [Labefy](https://62b09223ade87356b779dce9--labefy.netlify.app/)
 
 ## 🧰 Recursos
 
