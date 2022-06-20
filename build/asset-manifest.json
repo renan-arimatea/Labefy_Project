@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.841b201c.css",
+    "main.js": "/static/js/main.b9ec881e.js",
+    "static/media/Labefy.mp4": "/static/media/Labefy.f0cb11a45928f9276ba0.mp4",
+    "static/media/icon_3.webp": "/static/media/icon_3.b5f4363c23226bd89cc9.webp",
+    "static/media/BannerDesktop.png": "/static/media/BannerDesktop.45cad3698d2be6abc53a.png",
+    "static/media/banner3.jpg": "/static/media/banner3.c0add3ede61a85f7030e.jpg",
+    "static/media/headphones.jpg": "/static/media/headphones.d2e88449de8f1706c8c8.jpg",
+    "static/media/banner.jpg": "/static/media/banner.ce8993ec7009c812b3fd.jpg",
+    "static/media/banner2.jpg": "/static/media/banner2.53bd0c580dd9faf8f2ed.jpg",
+    "static/media/icon_2.webp": "/static/media/icon_2.52653212e96fc2ebcef8.webp",
+    "static/media/Labefy-Logo.png": "/static/media/Labefy-Logo.12090ec6bc9f91f6abcf.png",
+    "index.html": "/index.html",
+    "main.841b201c.css.map": "/static/css/main.841b201c.css.map",
+    "main.b9ec881e.js.map": "/static/js/main.b9ec881e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.841b201c.css",
+    "static/js/main.b9ec881e.js"
+  ]
+}
