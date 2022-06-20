@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const PlaylistContent = styled.div`
 
-background-image: url("/imgs/playlistBackground.jpg");
+background-image: url(${process.env.PUBLIC_URL + '/imgs/playlistBackground.jpg'});
 background-position: center;
 background-attachment: fixed;
 background-repeat: no-repeat;

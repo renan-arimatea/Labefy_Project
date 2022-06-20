@@ -9,7 +9,7 @@ align-items: center;
 margin: none;
 padding: 5em 4em;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
-background-image: url("/imgs/homeDesktop.jpg");
+background-image: url(${process.env.PUBLIC_URL + '/imgs/homeDesktop.jpg'});
 background-position: center;
 background-attachment: fixed;
 background-repeat: no-repeat;
@@ -17,7 +17,7 @@ background-size: cover;
 min-height: 100vh;
 
 @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    background-image: url("/imgs/homeMobile.jpg");
+    background-image:url(${process.env.PUBLIC_URL + '/imgs/homeMobile.jpg'})
 }
 
     h1 {

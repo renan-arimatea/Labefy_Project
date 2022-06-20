@@ -12,7 +12,7 @@ export const Main = styled.div`
     padding: 5em;
     margin: auto;
 
-    background-image: url("/imgs/404-ErrorPage.jpg");
+    background-image: url(${process.env.PUBLIC_URL + '/imgs/404-ErrorPage.jpg'});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -11,7 +11,7 @@ export const Main = styled.div`
     padding: 3em;
     margin: auto;
 
-    background-image: url("/imgs/aboutUsBackground.jpg");
+    background-image: url(${process.env.PUBLIC_URL + '/imgs/aboutUsBackground.jpg'});
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
