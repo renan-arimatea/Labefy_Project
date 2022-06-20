@@ -192,6 +192,13 @@ export const MusicData = styled.div`
 
 export const MusicProgres = styled.div`
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+   
+}
+
     .time {
         width: 15em;
         margin-top: 1em;

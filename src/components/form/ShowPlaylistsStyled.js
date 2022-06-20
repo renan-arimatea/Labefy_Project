@@ -34,6 +34,15 @@ button {
 
 
 .btn_Delete {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+    justify-content: center;
+    font-size: 1em;
+    width: auto;
+    height: auto;
+   
     :hover {
         cursor: pointer;
         color: red;
