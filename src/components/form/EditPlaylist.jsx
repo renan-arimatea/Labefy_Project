@@ -3,19 +3,18 @@ import axios from 'axios'
 import { axiosConfig, baseUrl } from '../constants/urls'
 import {MusicContainer, MusicCard, PlaylistDiv, Player, MusicData, MusicPlayer, MusicProgres} from "./EditPlaylistStyled"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCirclePlay, faCirclePause, faForwardSetp, faBackwardStep, faForwardStep} from '@fortawesome/free-solid-svg-icons'
-import { click } from '@testing-library/user-event/dist/click'
+import { faCirclePlay, faCirclePause, faBackwardStep, faForwardStep} from '@fortawesome/free-solid-svg-icons'
 
  class EditPlaylist extends React.Component {
 
 
     state = {
-
         showPlaylist: [],
         name: '', 
         artist: '',
         url: '',
     }
+
 
     componentDidMount = () => {
         this.abrePlaylist()
@@ -111,44 +110,73 @@ import { click } from '@testing-library/user-event/dist/click'
     }
 
 
-    // pularMusica = () => {
+    pularMusica = () => {
 
+        let indexMusic = 0
+       
+        document.querySelector('.forward').addEventListener('click', () => {
+            indexMusic++
+            this.renderizarMusica(indexMusic)
+            
+        });
 
-    //     document.querySelector('.btn_pause').addEventListener('click', this.pularMusica);
+    }
 
-    //     this.music.play()
+    voltarMusica = () => {
 
-    //     document.querySelector('.btn_pause').style.display ='none'
-    //     document.querySelector('.btn_play').style.display ='block'
+        let indexMusic = 0
+
+        document.querySelector('.backward').addEventListener('click', () => {
+            indexMusic--
+            this.renderizarMusica(indexMusic)
+        });
         
-    // }
+    }
 
-    // voltarMusica = () => {
+    renderizarMusica = (index) => {
 
-    //     document.querySelector('.btn_pause').addEventListener('click', this.voltarMusica);
+        let music = document.querySelector('audio');
+        let musicName = document.querySelector('.description p')
+        let artistName = document.querySelector('.description i')
 
-    //     this.music.pause()
+        music.setAttribute('src', this.state[index].url)
+        music.addEventListener('loadeddata', () => {
+            musicName.textContent = this.state[index].name
+            artistName.textContent = this.state[index].artist
+            this.musicDuration.textContent = this.segundosParaMinutos(Math.floor(music.duration))
+        })
+    }
 
-    //     document.querySelector('.btn_pause').style.display ='none'
-    //     document.querySelector('.btn_play').style.display ='block'
-        
-    // }
 
     atualizarBarra = () => {
 
         let music = document.querySelector('audio');
-
         let bar = document.querySelector('progress')
 
         music.addEventListener('timeupdate', this.atualizarBarra)
-
         bar.style.width = Math.floor((music.currentTime / music.duration) * 100) + '%'
 
+        let musicTime = document.querySelector('.start')
+        musicTime.textContent = this.segundosParaMinutos (Math.floor(music.currentTime))
+
+        let musicDuration = document.querySelector('.end')
+        musicDuration.textContent = this.segundosParaMinutos(Math.floor(music.duration))
+    }
+
+    segundosParaMinutos = (segundos) => {
+        let minuteArea = Math.floor(segundos / 60)
+        let secondsArea = segundos % 60
+        if (secondsArea < 10) {
+            secondsArea = '0' + secondsArea
+        }
+
+        return minuteArea+':'+secondsArea
     }
 
     mediaPlayer = () => {
         this.tocarMusica()
         this.atualizarBarra()
+        this.renderizarMusica(this.indexMusic)
     }
 
   render() {
@@ -169,7 +197,6 @@ import { click } from '@testing-library/user-event/dist/click'
             </MusicCard>
         )
     })
-
 
     return (
 
@@ -207,7 +234,7 @@ import { click } from '@testing-library/user-event/dist/click'
             <PlaylistDiv>{playlistRenderizada}</PlaylistDiv>
 
             <Player>
-                <MusicData >
+                <MusicData className='description'>
                     <p>Nome da música</p>
                     <i>Artista</i>
                 </MusicData>
@@ -217,15 +244,15 @@ import { click } from '@testing-library/user-event/dist/click'
                         <div className='dot'></div>
                     </div>
                     <div className='time'>
-                        <p className='start'>0:00</p>
-                        <p className='end'>3:40</p>
+                        <p className='start'></p>
+                        <p className='end'></p>
                     </div>
                 </MusicProgres>
                 <MusicPlayer>
-                    <FontAwesomeIcon className='btn btn_arrow' icon={faBackwardStep}/>
+                    <FontAwesomeIcon className='btn btn_arrow backward' icon={faBackwardStep} onClick={this.voltarMusica}/>
                     <FontAwesomeIcon className='btn btn_play' icon={faCirclePlay} onClick={this.mediaPlayer}/>
                     <FontAwesomeIcon className='btn btn_pause' icon={faCirclePause} onClick={this.pausarMusica}/>
-                    <FontAwesomeIcon className='btn btn_arrow' icon={faForwardStep}/>
+                    <FontAwesomeIcon className='btn btn_arrow forward' icon={faForwardStep} onClick={this.pularMusica}/>
                 </MusicPlayer>
             </Player>
 

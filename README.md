@@ -1,12 +1,12 @@
-# Projeto de Fixação: Labefy
+# 🎧 Projeto Labefy
 
-## Olá Terráqueos! 🖖👽
+## 🖖👽 Olá Terráqueos!
 
-Este é um Projeto de Fixação do curso Web Full Stack da Labenu.
+Este é um Projeto criado em ReactJs que tem por objetivo aplicar os conhecimentos adquiridos da linguagem.
 
 ## 💬 Sobre o projeto:
 
-O Labefy é um aplicativo de troca riação e gerencimanento de playlist de músicas tal como o Spotify, Apple Music, Deezer e muitos outros, porém neste projeto não foi desenvolvido um sistema que gerencia de forma mais profunda as playlist, é algo simples que apenas cria playlists e adiciona músicas através de urls. 
+A ideia central deste projeto é realizar uma integração com a API Labefy, que permite o gerenciamento básico de playlists de músicas. Ao acessar o site o usuário é capaz de criar playlists personalizadas com as suas músicas favoritas. Dentre os recursos disponíveis estão o de criar e deletar playlists, adcionar e excluir músicas e ouvir as músicas adicionadas.
 
 ## 👩‍💻 Linguagens Usadas:
 
@@ -20,28 +20,90 @@ O Labefy é um aplicativo de troca riação e gerencimanento de playlist de mús
 
 * ReactJS;
 
+## ⚙️ API Labefy:
+
+[Postman](https://documenter.getpostman.com/view/7549981/SztBc8eT#intro)
+
+## 🎵 URL's das Músicas:
+
+[Palcco MP3](https://www.palcomp3.com.br/)
+
 ## 🔗 Link do Surge:
 
-[Labefy](https://diligent-interest.surge.sh/)
+[Labefy](https://obsequious-tongue.surge.sh/)
 
-## O que funciona?
+## 🧰 Recursos
 
-* Criar playlists;
-* Adcionar músicas;
-* Ouvir as músicas adicionadas;
-* Apagar playlists;
-* Apagar músicas.
+- [X] Menu Superior (header)
+    - É possível navegar entre todas as páginas do site, tanto na versão desktop quanto na versão mobile.
 
-## O que precisa adcionar?
+- [X] Menu Inferior (footer)
+    - É possível acessar link das redes sociais e visualizar outras informações da página (criado como uma forma de deixar a expêriencia mais imersiva durante o uso do site).
 
-* Um botão mais intuitivo para a função de play|pause nas músicas.
+- [X] Página Home
+    - Botão para acessar a área de playlists;
+    - Video ORIGINAL criado somente para o projeto;
+    - Informações sobre o conteúdo do site.
 
+- [X] Página de Playlists:
+    - O usuário consegue criar ilimitadas playlists adicionando um nome para cada playlist criada (não é permitido  playlists com o mesmo nome);
+    - O usuário pode adicionar quantas músicas desejar em suas playlists;
+    - Para adicionar uma música, basta prencher os campos solicitados com o nome da música, artista e a url onde se encontra o arquivo de audio. (Só é possivel adicionar músicas que estejam hospedadas na web);
+    - Dentro do site é possível adicionar e excluir músicas através dos botões disponíveis em cada trilha musical. 
 
-## 📷 Layout Desktop 
+- [x] Página AboutUs
+    - Página estática criada para compor o layout do site.
 
-![Captura de tela 01](src/media/Captura%20de%20tela%202022-03-13%20234004.png)
-![Captura de tela 02](src/media/Captura%20de%20tela%202022-03-13%20234035.png)
-![Captura de tela 03](src/media/Captura%20de%20tela%202022-03-13%20234056.png)
-![Captura de tela 04](src/media/Captura%20de%20tela%202022-03-13%20234122.png)
-![Captura de tela 05](src/media/Captura%20de%20tela%202022-03-13%20234141.png)
-![Captura de tela 06](src/media/Captura%20de%20tela%202022-03-13%20234217.png)
+### Instalação
+
+Para rodar o projeto na máquina local é necessário a instalação do NodeJs:
+- [NodeJS](https://nodejs.org/en/download/)
+
+### Rodando a aplicação web
+Tendo o NodeJs instalado, efetue os comandos para instalar as dependências necessárias para rodar o projeto localmente:
+
+```
+$ npm install 
+```
+
+```
+$ npm i --save @fortawesome/fontawesome-svg-core
+$ npm install --save @fortawesome/free-solid-svg-icons
+$ npm install --save @fortawesome/react-fontawesome
+```
+
+```
+$ npm install react-router-dom@6
+```
+
+```
+$ npm install axios
+```
+
+```
+$ npm install react-icons --save
+```
+
+```
+$ npm install --save styled-components
+```
+
+<br/>
+
+Após a instalação das dependências, execute o comando necessário para rodar o projeto:
+
+`npm start`
+
+<br/>
+
+Por padrão a aplicação rodará localmente na porta 3000.
+
+<br/>
+
+### Créditos
+
+* Renan Arimatea 👋🏽 - [LinkedIn](https://www.linkedin.com/in/renan-arimatea/)
+
+## 💻 Desktop Layout
+
+## 📱 Mobile Layout
