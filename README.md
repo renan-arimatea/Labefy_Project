@@ -1,4 +1,4 @@
-# 🎧 Projeto Labefy
+# Projeto Labefy
 
 ## 🖖👽 Olá Terráqueos!
 
@@ -22,15 +22,15 @@ A ideia central deste projeto é realizar uma integração com a API Labefy, que
 
 ## ⚙️ API Labefy:
 
-[Postman](https://documenter.getpostman.com/view/7549981/SztBc8eT#intro)
+* [Postman](https://documenter.getpostman.com/view/7549981/SztBc8eT#intro)
 
 ## 🎵 URL's das Músicas:
 
-[Palcco MP3](https://www.palcomp3.com.br/)
+* [Palcco MP3](https://www.palcomp3.com.br/)
 
 ## 🔗 Link do Surge:
 
-[Labefy](https://obsequious-tongue.surge.sh/)
+* [Labefy](https://labefy-proejct-v2.surge.sh/)
 
 ## 🧰 Recursos
 
